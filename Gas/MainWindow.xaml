@@ -1,0 +1,41 @@
+﻿<Window x:Class="Gas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:m="clr-namespace:Microsoft.Maps.MapControl.WPF;assembly=Microsoft.Maps.MapControl.WPF"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gas"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="#FFC3EFE8">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <m:Map x:Name="mapa" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="6" Grid.RowSpan="7" Margin="00,0,0,0" CredentialsProvider="a2tSkgyLtanz4dqoKAxc~Tr5v_MweFHrJbuRyPfLt1A~AoAIKki7O1-hOPNl1kH5_x7LNHGdqKCFWNF__iifpYCtodKP2qmSTO0-4TBR1AQj">
+            <m:Map.ZoomLevel>15</m:Map.ZoomLevel>
+        </m:Map>
+
+        <ComboBox Grid.Row="0" Grid.Column="7" Grid.ColumnSpan="2"></ComboBox>
+        <ComboBox Grid.Row="2" Grid.Column="7" Grid.ColumnSpan="2"></ComboBox>
+        <ComboBox Grid.Row="4" Grid.Column="7" Grid.ColumnSpan="2"></ComboBox>
+        <CheckBox Grid.Row="7" Grid.Column="7"></CheckBox>
+        <RadioButton Grid.Row="7" Grid.Column="8"></RadioButton>
+    </Grid>
+</Window>
